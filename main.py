@@ -29,7 +29,8 @@ class Events:
 
 
 example_story = Events("prvy event", ["moznost1", "moznost2"],
-                       [Events("druhy event", [], None)])
+                       [Events("druhy event 1", [], None),
+                        Events("druhy event 2", [], None)])
 
 
 example_story.play()
