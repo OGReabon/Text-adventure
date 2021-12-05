@@ -16,7 +16,7 @@ class Events:
         for i in self.choices:
             print(i, end=" ")
         print()
-        choice = "not a choice 8379vngu2rf255"
+        choice = "not a choice 8379vngu2drf255"
 
         if not self.choices:
             input("press [enter] to exit")
