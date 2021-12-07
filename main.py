@@ -222,6 +222,28 @@ cesta_smrti = Event(["You have chosen the road of death.",
                      "As you step on it, you die.",
                      "You have died .."], [], [], None)
 
-cesta_duhova = Event([""], [""], [], None)
+cesta_duhova = Event(["You approach the rainbow road.",
+                      "As you get closer, you notice that Death is blocking your path.",
+                      "It offers you a black hole flavored ice-cream"],
+                     ["Accept",
+                      "Ask for gluten-free ice-cream cone"], [], None)
+
+popyta_si_bezglutenove = Event(["You ask Death for gluten-free ice-cream cone.",
+                                "Death grabs his scythe",
+                                "You notice that your head is not connected to your body anymore.",
+                                "You have died .."], [], [], None)
+
+prijme_zmrzlinu = Event(["As you accept the ice-cream, it starts to change shape and expand,",
+                         " morphing into a fabulous unicorn."],
+                        ["Mount the unicorn",
+                         "Say <eew, I dont line unicorns!>"], [], None)
+
+nema_rad_jednorozce = Event(["As you say that, your chest is impaled by the unicorn.",
+                             "You are now a decoration on the unicorn's head.",
+                             "You have died .."], [], [], None)
+
+nasadne_na_jednorozca = Event(["You mount the unicorn.",
+                               "You take off on the rainbow road towards a brighter future.",
+                               "YOU HAVE WON"], [], [], None)
 
 example_story.play()
