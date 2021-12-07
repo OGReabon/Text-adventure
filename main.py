@@ -158,4 +158,42 @@ infiltruje_lietadlo = Event(["You decide to infiltrate the plane.",
                              "Several minutes after takeoff you smell smoke.",
                              "The plane starts to dip towards the ground .."], [], [], None)  # ->preberie_sa_z_lietadla
 
+zje_lysohlavku = Event(["You take eat half a basket worth of mushrooms.", "",
+                        "You have entered the world of fantasy and wonder.",
+                        "You see a fat dragon to your left and a skinny griffin to your right"],
+                       ["Go towards the dragon",
+                        "Go towards the griffin"], [], None)
+
+ide_za_griffinom = Event(["You decide to go towards the griffin.",
+                          "It looks very skinny, as if it hasn't eaten is quite some time.",
+                          "You are eaten by the griffin.",
+                          "You have died .."], [], [], None)
+
+ide_za_drakom = Event(["You decide to go towards the dragon.",
+                       "The dragon tells you that he will eat you unless you answer his riddle correctly.",
+                       "<If you had five mangoes and two bananas in one hand and two mangoes and four bananas",
+                       "in the other hand, what would you have?>"],
+                      ["Very large hands",
+                       "Seven mangoes and six bananas"], [], None)
+
+spocita_to = Event(["You have given your answer.",
+                    "The dragon looks displeased by your answer.",
+                    "You are eaten by the dragon",
+                    "You have died .."], [], [], None)
+
+spravna_odpoved = Event(["You have given your answer.",
+                         "The dragon looks pleased by your answer and lets you go onward.",
+                         "Soon, a pixie approaches you.",
+                         "She offers you some pixie dust. ",
+                         "She claims it will teleport you home. Will you accept?"],
+                        ["Accept", "Decline"], [], None)
+
+nezoberie_pixie_dust = Event(["You decline the offfer.",
+                              "As soon as you do, the pixie and all other fantastical beasts",
+                              "around you start to disappear.",
+                              "", "You are surrounded by a tribe od indigenous people."],
+                             ["Surrender",
+                              "Try to escape"], [], None)
+
+
 example_story.play()
