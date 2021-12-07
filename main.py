@@ -119,8 +119,20 @@ neprezlecie_sa = Event(["As you try to exit the room, another guard sees you.",
                         "You have died .."], [], [], None)
 
 prezlecie_sa = Event(["You dress up as a guard. You fit in quite well.",
-                      "As you take a look around, a man who seems to be in charge orders you",
-                      "to execute a slave that has not fulfilled his quota."],
-                     ["Comply", "Refuse"], [], None)
+                      "As you take a look around, a man orders you",
+                      "to execute a slave that has not fulfilled his quota.",
+                      "He looks to be the chief around here."],
+                     ["Comply", "Refuse, give alternate options."], [], None)
+
+nepopravi_typka = Event(["You have chosen to refuse the order you have been given",
+                         "and you give alternate solutions.",
+                         "You are executed on basis of disobedience",
+                         "You have died .."], [], [], None)
+
+popravi_typka = Event(["You have complied with the order, executing the slave.",
+                       "You are given a pass to go home for the weekend directly by the chief.",
+                       "YOU HAVE WON", "",
+                       "~but at what price?"], [], [], None)
+
 
 example_story.play()
