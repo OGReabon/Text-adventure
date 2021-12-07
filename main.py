@@ -134,5 +134,11 @@ popravi_typka = Event(["You have complied with the order, executing the slave.",
                        "YOU HAVE WON", "",
                        "~but at what price?"], [], [], None)
 
+ide_za_svetlom = Event(["You decide to follow the shimmering light in the distance.",
+                        "On the way, you stumble across a patch of magic mushrooms."],
+                       ["Eat some",
+                        "Leave them be"], [], None)
+
+zje_lysohlavku = Event([""], [""], [], None)
 
 example_story.play()
