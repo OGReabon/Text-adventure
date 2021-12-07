@@ -152,4 +152,10 @@ poziada_o_pomoc = Event(["You decide to ask one of the people there for help.",
                          "being a spy or working with the government.",
                          "You have died .."], [], [], None)
 
+infiltruje_lietadlo = Event(["You decide to infiltrate the plane.",
+                             "It goes without problems, and you hide among the cargo of plastic-wrapped packages.",
+                             "Soon enough, the plane takes off.",
+                             "Several minutes after takeoff you smell smoke.",
+                             "The plane starts to dip towards the ground .."], [], [], None)  # ->preberie_sa_z_lietadla
+
 example_story.play()
