@@ -81,7 +81,7 @@ urobi_si_shelter = Event(["You wake up in your shelter,",
                           "and it hurts quite a bit.",
                           "You notice footprints in the soft soil."],
                          ["Follow the footprints",
-                          "Do not follow the footprints, go the opposite direction"], [], None)
+                          "Do not follow the footprints, go in a different direction"], [], None)
 
 nasleduje_stopy = Event(["Tou follow the footprints for quite a while.",
                          "Finally, you notice a large field of what seems like marijuana, tall as a person.",
@@ -139,6 +139,17 @@ ide_za_svetlom = Event(["You decide to follow the shimmering light in the distan
                        ["Eat some",
                         "Leave them be"], [], None)
 
-zje_lysohlavku = Event([""], [""], [], None)
+nezje_lysohlavku = Event(["As you get closer to the light, there seem to be some buildings there.",
+                          "On what looks like a small runway is a small plane,",
+                          "it doesn't look like it is in the best condition."
+                          "Several people are strolling about"],
+                         ["Sneak onto the plane and hide",
+                          "Ask one of the people there for help"], [], None)
+
+poziada_o_pomoc = Event(["You decide to ask one of the people there for help.",
+                         "They look like mercenaries and take you to their headquarters.",
+                         "You are questioned and ultimately shot on basis of",
+                         "being a spy or working with the government.",
+                         "You have died .."], [], [], None)
 
 example_story.play()
