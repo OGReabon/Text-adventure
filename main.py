@@ -1,10 +1,11 @@
 import sys
+import time
 from typing import List, Optional
 
 
 class Event:
     def __init__(self, text: List[str], choices: List[str],
-                 next_events: Optional[List['Event']], parent = Optional['Event']):
+                 next_events: Optional[List['Event']], parent: Optional['Event']):
         self.text = text
         self.choices = choices
         self.next_events = next_events
@@ -13,32 +14,31 @@ class Event:
     def play(self):
         print("* ----------------- *")
         for line in self.text:
+            time.sleep(0.4)
             print(line)
         print()
 
         print(f"Choices: ", end="")
-        for i in self.choices:
-            print(i, end=" ")
+        for idx, choice in enumerate(self.choices):
+            print(f"         {idx}; {choice}")
         print()
 
         if not self.choices:
             input("press [enter] to exit")
             sys.exit()
 
-        choice = "not a choice 8379vngu2drf255"
-        while choice not in self.choices:
+        choice = 1232
+        while 0 <= choice < len(self.choices):
             choice = input("Your choice: ")
-            if choice not in self.choices:
-                print("~that is not an option~")
-        next = self.choices.index(choice)
-        self.next_events[next].play()
 
+            if not choice.isdigit():
+                print("~enter a number~")
+                choice = 1232
+            else:
+                choice = int(choice)
 
-event_death = Event(["YOU HAVE DIED"], [], None)
+        self.next_events[choice].play()
 
-example_story = Event(["prvy event", "text k tomu", "dalsi text k tomu"], ["moznost1", "moznost2"],
-                      [Event(["druhy event 1"], [], None),
-                       event_death])
 
 intro = ["You have boarded an aeroplane just like any other time.",
          "It takes off, no problem.",
