@@ -246,4 +246,8 @@ nasadne_na_jednorozca = Event(["You mount the unicorn.",
                                "You take off on the rainbow road towards a brighter future.",
                                "YOU HAVE WON"], [], [], None)
 
-example_story.play()
+for i in intro:
+    print(i)
+    time.sleep(0.4)
+
+preberie_sa_z_lietadla.play()
