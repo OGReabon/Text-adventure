@@ -195,5 +195,33 @@ nezoberie_pixie_dust = Event(["You decline the offfer.",
                              ["Surrender",
                               "Try to escape"], [], None)
 
+uteka_pred_domorodcami = Event(["Yot try to escape the tribe.",
+                                "There is just too much of them, and your struggle is meaningless.",
+                                "You tried to run, and according to the local custom, you are eaten.",
+                                "You have died .."], [], [], None)
+
+neuteka_a_vzda_sa = Event(["You have surrendered to the tribe.",
+                           "You are crowned their king, according to the local custom.",
+                           "You soon realize that the tribe has some customs that are a bit controversial."],
+                          ["Try to reform their customs",
+                           "Leave the customs as they are"], [], None)
+
+nezmeni_tradicie = Event(["You have decided not to change their customs.",
+                          "During full moon you are offered to their gods as a sacrifice.",
+                          "You have died .."], [""], [], None)
+
+zmeni_tradicie = Event(["You have changed their traditions, but it was not easy.",
+                        "You are to remain their king for the rest of your life.",
+                        "YOU HAVE PARTIALLY WON"], [], [], None)
+
+zoberie_pixie_dust = Event(["As you take the pixie dust, two roads appear before you.",
+                            "One looks like a road of death and heads underground.",
+                            "The other is a road made of rainbow and stretches into the sky"], [""], [], None)
+
+cesta_smrti = Event(["You have chosen the road of death.",
+                     "As you step on it, you die.",
+                     "You have died .."], [], [], None)
+
+cesta_duhova = Event([""], [""], [], None)
 
 example_story.play()
