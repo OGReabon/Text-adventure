@@ -46,8 +46,9 @@ intro = ["You have boarded an aeroplane just like any other time.",
          "\"Dear passengers, I regret to inform you, but the plane ",
          "is having unexpected difficulties concerning three out of four engines.",
          "This may be the best time to call your family.\"",
-         "As if on cue, there is a sudden bang, as one of the engines engine rips itself to shreds.",
-         "The plane starts to dip towards the ground .."]
+         "As if on cue, there is a sudden bang, as one of the engines rips itself to shreds.",
+         "The plane starts to dip towards the ground ..",
+         "", "GOAL: escape the island", ""]
 
 # TODO link all events after all are declared, add pictures
 
