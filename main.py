@@ -104,10 +104,23 @@ nezrobi_si_joint = Event(["You choose not to make a joint.",
                           "to the point when you are not able to suppress a scream.",
                           "You hear barking of dogs, it gets closer and closer by the second.",
                           "You are devoured by a pack of hounds.",
-                          "You have died .."], [""], [], None)
+                          "You have died .."], [], [], None)
 
 zrobi_si_joint = Event(["You decide to roll a joint from the plants around you.",
-                        ""], [""], [], None)
+                        "The pain fades away, as if it was never there.",
+                        "From there you continue into the nearest building.",
+                        "It seems to be a dressing room for the mercenaries working there.",
+                        "There are several sets of extra uniforms and other gear"],
+                       ["Dress as a guard",
+                        "Do not dress a guard, continue as you are now"], [], None)
 
+neprezlecie_sa = Event(["As you try to exit the room, another guard sees you.",
+                        "You are executed.",
+                        "You have died .."], [], [], None)
+
+prezlecie_sa = Event(["You dress up as a guard. You fit in quite well.",
+                      "As you take a look around, a man who seems to be in charge orders you",
+                      "to execute a slave that has not fulfilled his quota."],
+                     ["Comply", "Refuse"], [], None)
 
 example_story.play()
