@@ -106,4 +106,8 @@ nezrobi_si_joint = Event(["You choose not to make a joint.",
                           "You are devoured by a pack of hounds.",
                           "You have died .."], [""], [], None)
 
+zrobi_si_joint = Event(["You decide to roll a joint from the plants around you.",
+                        ""], [""], [], None)
+
+
 example_story.play()
